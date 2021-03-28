@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import QPushButton, QListWidget, QWidget, QVBoxLayout, QScr
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(614, 479)
+        MainWindow.resize(779, 434)
         font = QFont()
         font.setFamily(u"Segoe UI")
         font.setPointSize(14)
@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.tabWidget = QTabWidget(self.centralwidget)
         self.tabWidget.setObjectName(u"tabWidget")
-        self.tabWidget.setGeometry(QRect(40, 20, 501, 341))
+        self.tabWidget.setGeometry(QRect(10, 10, 511, 421))
         self.tabWidget.setStyleSheet(u"font: 12pt \"Lucida Calligraphy\";\n"
                                      "border-radius: 10px;\n"
                                      "color: rgb(17, 167, 157);\n"
@@ -44,7 +44,7 @@ class Ui_MainWindow(object):
         self.feedsArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 477, 288))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 481, 353))
         self.verticalLayout = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.feedsArea.setWidget(self.scrollAreaWidgetContents)
@@ -60,7 +60,7 @@ class Ui_MainWindow(object):
         self.myFeedsArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 487, 365))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 485, 363))
         self.verticalLayout_2 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.myFeedsArea.setWidget(self.scrollAreaWidgetContents_2)
@@ -69,7 +69,7 @@ class Ui_MainWindow(object):
         self.friendsTab.setObjectName(u"friendsTab")
         self.friendsList = QListWidget(self.friendsTab)
         self.friendsList.setObjectName(u"friendsList")
-        self.friendsList.setGeometry(QRect(10, 0, 501, 331))
+        self.friendsList.setGeometry(QRect(10, 10, 491, 321))
         font1 = QFont()
         font1.setFamily(u"Lucida Calligraphy")
         font1.setPointSize(12)
@@ -81,42 +81,42 @@ class Ui_MainWindow(object):
         self.tabWidget.addTab(self.friendsTab, "")
         self.exitButton = QPushButton(self.centralwidget)
         self.exitButton.setObjectName(u"exitButton")
-        self.exitButton.setGeometry(QRect(420, 440, 171, 31))
+        self.exitButton.setGeometry(QRect(530, 300, 211, 31))
         self.exitButton.setStyleSheet(u"font: 12pt \"Lucida Calligraphy\";\n"
                                       "border-radius: 10px;\n"
                                       "background-color: rgb(17, 167, 157);\n"
                                       "")
         self.sendMessageButton = QPushButton(self.centralwidget)
         self.sendMessageButton.setObjectName(u"sendMessageButton")
-        self.sendMessageButton.setGeometry(QRect(30, 440, 181, 31))
+        self.sendMessageButton.setGeometry(QRect(530, 140, 211, 31))
         self.sendMessageButton.setStyleSheet(u"font: 12pt \"Lucida Calligraphy\";\n"
                                              "border-radius: 10px;\n"
                                              "background-color: rgb(17, 167, 157);\n"
                                              "")
         self.createPostButton = QPushButton(self.centralwidget)
         self.createPostButton.setObjectName(u"createPostButton")
-        self.createPostButton.setGeometry(QRect(230, 440, 161, 31))
+        self.createPostButton.setGeometry(QRect(530, 180, 211, 31))
         self.createPostButton.setStyleSheet(u"font: 12pt \"Lucida Calligraphy\";\n"
                                             "border-radius: 10px;\n"
                                             "background-color: rgb(17, 167, 157);\n"
                                             "")
         self.deleteFriend = QPushButton(self.centralwidget)
         self.deleteFriend.setObjectName(u"deleteFriend")
-        self.deleteFriend.setGeometry(QRect(310, 360, 231, 31))
+        self.deleteFriend.setGeometry(QRect(530, 260, 211, 31))
         self.deleteFriend.setStyleSheet(u"font: 12pt \"Lucida Calligraphy\";\n"
                                         "border-radius: 10px;\n"
                                         "background-color: rgb(17, 167, 157);\n"
                                         "")
         self.addFriend = QPushButton(self.centralwidget)
         self.addFriend.setObjectName(u"addFriend")
-        self.addFriend.setGeometry(QRect(50, 360, 231, 31))
+        self.addFriend.setGeometry(QRect(530, 220, 211, 31))
         self.addFriend.setStyleSheet(u"font: 12pt \"Lucida Calligraphy\";\n"
                                      "border-radius: 10px;\n"
                                      "background-color: rgb(17, 167, 157);\n"
                                      "")
         self.aboutMeButton = QPushButton(self.centralwidget)
         self.aboutMeButton.setObjectName(u"aboutMeButton")
-        self.aboutMeButton.setGeometry(QRect(260, 400, 81, 31))
+        self.aboutMeButton.setGeometry(QRect(530, 100, 211, 31))
         self.aboutMeButton.setStyleSheet(u"font: 12pt \"Lucida Calligraphy\";\n"
                                          "border-radius: 10px;\n"
                                          "background-color: rgb(17, 167, 157);\n"
