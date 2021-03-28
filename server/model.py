@@ -20,6 +20,14 @@ class Post(Base):
     user_id = Column(Integer, ForeignKey('users.id'))
 
     def __init__(self, html, text, creator_name):
+        """
+        :param html:
+        :type html:
+        :param text:
+        :type text:
+        :param creator_name:
+        :type creator_name:
+        """
         self.html = html
         self.text = text
         self.creator_name = creator_name
@@ -36,10 +44,20 @@ class Message(Base):
     user_id = Column(Integer, ForeignKey('users.id'))
 
     def __init__(self, text, sender_name):
+        """
+        :param text:
+        :type text:
+        :param sender_name:
+        :type sender_name:
+        """
         self.text = text
         self.sender_name = sender_name
 
     def __repr__(self):
+        """
+        :return:
+        :rtype:
+        """
         return f"<Message('{self.text}')>"
 
 
@@ -55,6 +73,17 @@ class User(Base):
     friends = Column(Text)
 
     def __init__(self, name, email, username, password):
+        """
+
+        :param name:
+        :type name:
+        :param email:
+        :type email:
+        :param username:
+        :type username:
+        :param password:
+        :type password:
+        """
         self.name = name
         self.email = email
         self.username = username
@@ -62,4 +91,9 @@ class User(Base):
         self.friends = ""
 
     def __repr__(self):
+        """
+
+        :return:
+        :rtype:
+        """
         return "<User('%s','%s', '%s')>" % (self.name, self.username, self.password)

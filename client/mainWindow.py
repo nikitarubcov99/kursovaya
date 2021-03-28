@@ -6,6 +6,11 @@ from PyQt5.QtWidgets import QPushButton, QListWidget, QWidget, QVBoxLayout, QScr
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
+        """
+
+        :param MainWindow:
+        :type MainWindow:
+        """
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(779, 434)
         font = QFont()
@@ -129,6 +134,11 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
+        """
+
+        :param MainWindow:
+        :type MainWindow:
+        """
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.helloLabel.setText(_translate("MainWindow", "Здравствуйте , Олег"))

@@ -3,6 +3,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_createPostForm(object):
     def setupUi(self, createPostForm):
+        """
+
+        :param createPostForm:
+        :type createPostForm:
+        """
         createPostForm.setObjectName("createPostForm")
         createPostForm.resize(460, 393)
         font = QtGui.QFont()
@@ -28,6 +33,11 @@ class Ui_createPostForm(object):
         QtCore.QMetaObject.connectSlotsByName(createPostForm)
 
     def retranslateUi(self, createPostForm):
+        """
+
+        :param createPostForm:
+        :type createPostForm:
+        """
         _translate = QtCore.QCoreApplication.translate
         createPostForm.setWindowTitle(_translate("createPostForm", "Создание поста"))
         self.postTextBrowser.setPlaceholderText(_translate("createPostForm", "ПОДДЕРЖИВАЮТСЯ HTML ТЕГИ ДЛЯ ФОРМАТИРОВАНИЯ ТЕКСТА"))

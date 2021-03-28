@@ -3,6 +3,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_sendMessageForm(object):
     def setupUi(self, sendMessageForm):
+        """
+
+        :param sendMessageForm:
+        :type sendMessageForm:
+        """
         sendMessageForm.setObjectName("sendMessageForm")
         sendMessageForm.resize(400, 362)
         font = QtGui.QFont()
@@ -32,6 +37,11 @@ class Ui_sendMessageForm(object):
         QtCore.QMetaObject.connectSlotsByName(sendMessageForm)
 
     def retranslateUi(self, sendMessageForm):
+        """
+
+        :param sendMessageForm:
+        :type sendMessageForm:
+        """
         _translate = QtCore.QCoreApplication.translate
         sendMessageForm.setWindowTitle(_translate("sendMessageForm", "Сообщение"))
         self.nameLineEdit.setPlaceholderText(_translate("sendMessageForm", "Имя"))

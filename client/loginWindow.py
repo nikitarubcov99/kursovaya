@@ -3,6 +3,10 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_loginForm(object):
     def setupUi(self, loginForm):
+        """
+
+        :rtype: object
+        """
         loginForm.setObjectName("loginForm")
         loginForm.resize(313, 148)
         font = QtGui.QFont()

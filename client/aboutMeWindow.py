@@ -3,6 +3,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_aboutMeForm(object):
     def setupUi(self, aboutMeForm):
+        """
+
+        :param aboutMeForm:
+        :type aboutMeForm:
+        """
         aboutMeForm.setObjectName("aboutMeForm")
         aboutMeForm.resize(272, 479)
         font = QtGui.QFont()
@@ -33,6 +38,11 @@ class Ui_aboutMeForm(object):
         QtCore.QMetaObject.connectSlotsByName(aboutMeForm)
 
     def retranslateUi(self, aboutMeForm):
+        """
+
+        :param aboutMeForm:
+        :type aboutMeForm:
+        """
         _translate = QtCore.QCoreApplication.translate
         aboutMeForm.setWindowTitle(_translate("aboutMeForm", "Обо мне"))
         self.label.setText(_translate("aboutMeForm", "Данные:"))

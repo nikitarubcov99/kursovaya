@@ -158,6 +158,13 @@ class AboutMeWindow(QtWidgets.QWidget, aboutMeWindow.Ui_aboutMeForm):
 class CreatePostWindow(QtWidgets.QWidget, createPostWindow.Ui_createPostForm):
 
     def __init__(self, username, main_window):
+        """
+
+        :param username:
+        :type username:
+        :param main_window:
+        :type main_window:
+        """
         self.main_window = main_window
         super().__init__()
         self.username = username
@@ -199,6 +206,13 @@ class RegistrationWindow(QtWidgets.QWidget, registrationWindow.Ui_registrationFo
 class MessageWindow(QtWidgets.QWidget, messageWindow.Ui_MessageForm):
 
     def __init__(self, text, sender_name):
+        """
+
+        :param text:
+        :type text:
+        :param sender_name:
+        :type sender_name:
+        """
         super().__init__()
         self.setupUi(self)
         self.setFixedSize(self.size())
@@ -210,6 +224,13 @@ class MessageWindow(QtWidgets.QWidget, messageWindow.Ui_MessageForm):
 class SendMessageWindow(QtWidgets.QWidget, sendMessageWindow.Ui_sendMessageForm):
 
     def __init__(self, sender_name, main_window):
+        """
+
+        :param sender_name:
+        :type sender_name:
+        :param main_window:
+        :type main_window:
+        """
         self.main_window = main_window
         super().__init__()
         self.setupUi(self)
@@ -261,9 +282,14 @@ class LoginWindow(QtWidgets.QWidget, loginWindow.Ui_loginForm):
 
 def my_except_hook(in_type, value, type_back):
     """
-    Ловит исключения возникающие в оболочке
-    """
 
+    :param in_type:
+    :type in_type:
+    :param value:
+    :type value:
+    :param type_back:
+    :type type_back:
+    """
     QtWidgets.QMessageBox.critical(
         window, "CRITICAL ERROR", str(value),
         QtWidgets.QMessageBox.Cancel

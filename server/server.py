@@ -9,7 +9,6 @@ from model import *
 Session = sessionmaker(bind=model.engine)
 session = Session()
 
-
 def start():
     import socket
     model.init()
@@ -32,6 +31,13 @@ def start():
 
 
 def check_request(request):
+    """
+
+    :param request:
+    :type request:
+    :return:
+    :rtype:
+    """
     if request[0] == "add user":
         user = session.query(User).filter(User.name == request[1].get('name')).first()
         if user:

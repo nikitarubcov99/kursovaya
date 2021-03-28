@@ -3,6 +3,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_registrationForm(object):
     def setupUi(self, registrationForm):
+        """
+
+        :param registrationForm:
+        :type registrationForm:
+        """
         registrationForm.setObjectName("registrationForm")
         registrationForm.resize(313, 211)
         font = QtGui.QFont()
@@ -42,6 +47,11 @@ class Ui_registrationForm(object):
         QtCore.QMetaObject.connectSlotsByName(registrationForm)
 
     def retranslateUi(self, registrationForm):
+        """
+
+        :param registrationForm:
+        :type registrationForm:
+        """
         _translate = QtCore.QCoreApplication.translate
         registrationForm.setWindowTitle(_translate("registrationForm", "Регистрация"))
         self.usernameLineEdit.setPlaceholderText(_translate("registrationForm", "Логин"))
